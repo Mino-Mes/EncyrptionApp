@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Notencrypt"
+        android:textColor="@color/red"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/inputCleartext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Input ClearText"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+      />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="key"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/encryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Encrypt"
+        android:onClick="encryptText"/>
+    <Button
+        android:id="@+id/decryptButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decrypt"
+        android:onClick="decryptText"
+       />
+
+    <TextView
+        android:id="@+id/encryptedOutput"
+        android:hint="Encrypted Output"
+        android:gravity="center"
+        android:padding="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textIsSelectable="true"/>
+
+
+</LinearLayout>
